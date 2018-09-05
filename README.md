@@ -37,7 +37,7 @@ def new
   @post = Post.new(author_id: params[:author_id])
 end
 ```
-
+as
 Notice that we're passing the `params[:author_id]` into `Post.new()`. We want to make sure that, if we capture an `author_id` through a nested route, we keep track of it and assign the post to that author. We'll actually be carrying this `id` with us for the next few steps, babysitting it through the server request/response cycle.
 
 Now let's get into our author `show` template and add a link to the nested new post page for that author.
